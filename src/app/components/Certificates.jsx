@@ -43,16 +43,16 @@ const CertificatesSection = () => {
             className="group cursor-pointer relative rounded-2xl overflow-hidden bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-sm hover:shadow-xl transition-all"
           >
             <div className="relative h-48 w-full overflow-hidden">
-              <img 
-                src={cert.thumbnail} 
-                alt={cert.title} 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+              <img
+                src={cert.thumbnail}
+                alt={cert.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <MagnifyingGlassPlusIcon className="w-10 h-10 text-white" />
               </div>
             </div>
-            
+
             <div className="p-4 bg-white dark:bg-[#121212]">
               <h3 className="font-bold text-slate-900 dark:text-white truncate">{cert.title}</h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{cert.provider}</p>
@@ -79,7 +79,7 @@ const CertificatesSection = () => {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setSelectedCert(null)}
                 className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 hover:bg-black text-white transition-colors"
               >
@@ -88,9 +88,9 @@ const CertificatesSection = () => {
 
               <div className="flex flex-col md:flex-row h-full max-h-[85vh]">
                 <div className="flex-1 bg-slate-200 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src={selectedCert.thumbnail} 
-                    alt={selectedCert.title} 
+                  <img
+                    src={selectedCert.thumbnail}
+                    alt={selectedCert.title}
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -103,7 +103,7 @@ const CertificatesSection = () => {
                   </p>
                   <div className="mt-8 pt-8 border-t border-black/5 dark:border-white/10">
                     <p className="text-sm text-slate-600 dark:text-slate-400 italic">
-                      "Verified credential earned for demonstrating professional proficiency in the field."
+                      &quot;Verified credential earned for demonstrating professional proficiency in the field.&quot;
                     </p>
                   </div>
                 </div>

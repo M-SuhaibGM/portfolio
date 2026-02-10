@@ -24,7 +24,7 @@ const EmailSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    
+
     try {
       const response = await fetch("/api/send", {
         method: "POST",
@@ -55,12 +55,12 @@ const EmailSection = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-4 tracking-tighter">
-            Let’s <span className="text-blue-500">Connect</span>
+            Let&apos;s <span className="text-blue-500">Connect</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-md leading-relaxed">
-            I’m currently open to new opportunities and collaborations. 
-            Whether you have a specific project in mind or just want to network, 
-            don't hesitate to reach out!
+            I&apos;m currently open to new opportunities and collaborations.
+            Whether you have a specific project in mind or just want to network,
+            don&apos;t hesitate to reach out!
           </p>
 
           <div className="space-y-4 mb-8">
@@ -77,17 +77,17 @@ const EmailSection = () => {
               { icon: GithubIcon, link: "https://github.com/M-SuhaibGM", label: "GitHub" },
               { icon: LinkedinIcon, link: "https://www.linkedin.com/in/muhammad-suhaib-811452326/", label: "LinkedIn" }
             ].map((social, i) => (
-              <Link 
-                key={i} 
-                href={social.link} 
+              <Link
+                key={i}
+                href={social.link}
                 target="_blank"
                 className="p-3 bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-xl hover:border-blue-500 transition-all group"
               >
-                <Image 
-                  src={social.icon} 
-                  alt={social.label} 
-                  width={24} 
-                  height={24} 
+                <Image
+                  src={social.icon}
+                  alt={social.label}
+                  width={24}
+                  height={24}
                   className="dark:invert-0 grayscale group-hover:grayscale-0 transition-all"
                 />
               </Link>
@@ -107,8 +107,8 @@ const EmailSection = () => {
               <ChatBubbleBottomCenterTextIcon className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold dark:text-white mb-2">Message Sent!</h3>
-            <p className="text-slate-500 text-sm">Thanks for reaching out. I'll get back to you soon.</p>
-            <button 
+            <p className="text-slate-500 text-sm">Thanks for reaching out. I&apos;ll get back to you soon.</p>
+            <button
               onClick={() => setEmailSubmitted(false)}
               className="mt-6 text-blue-500 text-sm font-bold hover:underline"
             >

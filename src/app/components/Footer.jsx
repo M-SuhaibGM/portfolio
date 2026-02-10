@@ -2,10 +2,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { 
-  EnvelopeIcon, 
-  PhoneIcon, 
-  ChevronUpIcon 
+import {
+  EnvelopeIcon,
+  PhoneIcon,
+  ChevronUpIcon
 } from "@heroicons/react/24/outline";
 
 const Footer = () => {
@@ -17,14 +17,14 @@ const Footer = () => {
     <footer className="relative mt-20 border-t border-black/5 dark:border-white/10 bg-slate-50 dark:bg-[#0a0a0a] transition-colors duration-300">
       <div className="container mx-auto px-6 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          
+
           {/* Brand & About Section */}
           <div className="flex flex-col space-y-4">
             <Link href="/" className="text-2xl font-black tracking-tighter dark:text-white">
               DEV.<span className="text-blue-500">PORTFOLIO</span>
             </Link>
             <p className="text-slate-600 dark:text-slate-400 max-w-xs leading-relaxed">
-              Crafting high-performance web experiences with modern tech stacks. 
+              Crafting high-performance web experiences with modern tech stacks.
               Based in Kanganpur, Pakistan.
             </p>
           </div>
@@ -55,8 +55,8 @@ const Footer = () => {
           <div className="flex flex-col space-y-4">
             <h5 className="text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-white">Contact</h5>
             <div className="space-y-3">
-              <a 
-                href="mailto:mmsohaib617@gmail.com" 
+              <a
+                href="mailto:mmsohaib617@gmail.com"
                 className="flex items-center gap-3 text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors"
               >
                 <EnvelopeIcon className="w-5 h-5" />
@@ -67,12 +67,12 @@ const Footer = () => {
                 <span>0319-4776162</span>
               </div>
               <div className="flex items-center gap-2 mt-4">
-                 <img 
-                    src="https://img.icons8.com/ios-filled/50/3b82f6/whatsapp.png" 
-                    alt="WhatsApp"
-                    className="w-5 h-5"
-                  />
-                  <span className="text-sm font-medium text-blue-500">Active on WhatsApp</span>
+                <img
+                  src="https://img.icons8.com/ios-filled/50/3b82f6/whatsapp.png"
+                  alt="WhatsApp"
+                  className="w-5 h-5"
+                />
+                <span className="text-sm font-medium text-blue-500">Active on WhatsApp</span>
               </div>
             </div>
           </div>
