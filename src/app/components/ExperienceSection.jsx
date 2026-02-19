@@ -26,7 +26,7 @@ const ExperienceSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="text-5xl md:text-7xl font-black text-white tracking-tighter"
@@ -40,13 +40,13 @@ const ExperienceSection = () => {
           {/* Left Side: Professional Summary */}
           <div className="lg:col-span-4 space-y-6">
             <p className="text-slate-400 text-lg leading-relaxed">
-              My professional background is rooted in building efficient, user-centric applications. 
+              My professional background is rooted in building efficient, user-centric applications.
               I focus on bridging the gap between complex backend logic and seamless frontend experiences.
             </p>
             <div className="p-6 rounded-3xl bg-blue-500/5 border border-blue-500/20">
               <p className="text-blue-400 font-bold text-sm uppercase tracking-widest mb-2">Philosophy</p>
               <p className="text-white text-sm italic font-medium">
-                "Code is not just about solving problems; it's about creating scalable systems that empower users."
+                Code is not just about solving problems; it`&apos;s about creating scalable systems that empower users.
               </p>
             </div>
           </div>
