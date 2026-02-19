@@ -5,15 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
-import { UserIcon, CodeBracketIcon, AcademicCapIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { UserIcon, CodeBracketIcon, AcademicCapIcon, EnvelopeIcon, CommandLineIcon } from "@heroicons/react/24/outline";
 
 const navLinks = [
   { title: "About", path: "#about", icon: <UserIcon className="w-4 h-4" /> },
+  { title: "Skills", path: "#skills", icon: <CommandLineIcon className="w-4 h-4" /> },
   { title: "Projects", path: "#projects", icon: <CodeBracketIcon className="w-4 h-4" /> },
+  { title: "Experience", path: "#experience", icon: <CodeBracketIcon className="w-4 h-4" /> },
   { title: "Certificates", path: "#certificates", icon: <AcademicCapIcon className="w-4 h-4" /> },
-  { title: "Contact", path: "#contact", icon: <EnvelopeIcon className="w-4 h-4" /> },
+  { title: "Contact", path: "#contact", },
 ];
-
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,7 +67,7 @@ const Navbar = () => {
               />
             </div>
             <span className="hidden sm:block font-extrabold text-sm tracking-tighter text-slate-900 dark:text-white">
-              DEV.<span className="text-violet-600 dark:text-cyan-400">PORTFOLIO</span>
+              Muhammad <span className="text-violet-600 dark:text-cyan-400">Suhaib</span>
             </span>
           </Link>
 

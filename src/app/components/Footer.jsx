@@ -21,11 +21,11 @@ const Footer = () => {
           {/* Brand & About Section */}
           <div className="flex flex-col space-y-4">
             <Link href="/" className="text-2xl font-black tracking-tighter dark:text-white">
-              DEV.<span className="text-blue-500">PORTFOLIO</span>
+              Muhammad <span className="text-blue-500">Suhaib</span>
             </Link>
             <p className="text-slate-600 dark:text-slate-400 max-w-xs leading-relaxed">
               Crafting high-performance web experiences with modern tech stacks.
-              Based in Kanganpur, Pakistan.
+              Based in lahore, Pakistan.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
               {[
                 { name: "GitHub", href: "https://github.com/M-SuhaibGM" },
                 { name: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-suhaib-811452326/" },
-                { name: "Twitter / X", href: "#" }
+              
               ].map((link) => (
                 <a
                   key={link.name}

@@ -4,98 +4,122 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { MapPinIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 
 const HeroSection = () => {
   return (
     <section className="relative py-12 lg:py-24 overflow-hidden">
-      {/* 🌙 BLUE MOON TOP GLOW */}
-      <div className="absolute top-[-150px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-cyan-500/40 blur-[150px] rounded-full z-0" />
+      {/* 🌙 Background Ambient Glow */}
+      <div className="absolute top-[-100px] right-[10%] w-[400px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full z-0" />
 
-      {/* Main Grid Container */}
-      <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-12 relative z-10 gap-8">
-
-        {/* Text Content */}
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 relative z-10 gap-12 items-center">
+        
+        {/* LEFT CONTENT */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="col-span-1 sm:col-span-8 flex flex-col items-center sm:items-start text-center sm:text-left justify-self-start"
+          transition={{ duration: 0.8 }}
+          className="col-span-1 lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left"
         >
-          <h1 className="text-white mb-6 text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400">
-              Hello, I&apos;m{" "}
+          {/* Status Badge */}
+          <div className="inline-flex items-center gap-2 mb-6 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <br />
+            <span className="text-blue-400 text-[10px] font-black uppercase tracking-[0.2em]">
+              Available for Work
+            </span>
+          </div>
+
+          {/* MAIN NAME - HUGE */}
+          <h1 className="text-white text-6xl sm:text-7xl lg:text-9xl font-black tracking-tighter leading-none mb-4">
+            M. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">SUHAIB</span>
+          </h1>
+
+          {/* SUB-ANIMATION - SMALLER */}
+          <div className="h-12 flex items-center">
+            <span className="text-slate-400 text-lg lg:text-2xl font-medium mr-2">Specializing in</span>
             <TypeAnimation
-              sequence={["M SUHIAB", 1500, "Web Developer", 1500, "UI Designer", 1500]}
+              sequence={[
+                "Advance Web Development", 2000,
+                "Responsive Design", 2000,
+                "React Development", 2000,
+                "Next js ", 2000,
+              ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="text-white"
+              className="text-white text-lg lg:text-2xl font-bold italic border-b-2 border-blue-500"
             />
-          </h1>
+          </div>
 
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-8 lg:text-xl max-w-lg leading-relaxed">
-            Crafting responsive, user-centric web applications with modern
-            tech stacks. Focused on performance and clean aesthetics.
-          </p>
+          {/* Location & Meta */}
+          <div className="flex items-center gap-4 mt-6 mb-8">
+            <div className="flex items-center gap-1.5 text-slate-400 text-sm">
+              <MapPinIcon className="w-4 h-4 text-blue-500" />
+              <span>Punjab, Lahore</span>
+            </div>
+            <div className="w-1 h-1 bg-slate-700 rounded-full" />
+            {/* <div className="text-slate-400 text-sm">2+ Years Exp.</div> */}
+          </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start w-full sm:w-auto">
-            <Link href="#contact" className="w-full sm:w-auto">
-              <button className="px-8 py-4 w-full rounded-full bg-white text-black font-bold hover:bg-blue-500 hover:text-white border-2 border-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                HIRE ME
-              </button>
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <Link href="#contact" className="px-10 py-4 rounded-full bg-white text-black font-black hover:bg-blue-500 hover:text-white transition-all text-center">
+              HIRE ME
             </Link>
-
-            <a href="/Resume.pdf" download className="w-full sm:w-auto">
-              <button className="px-8 py-4 w-full rounded-full bg-transparent text-white font-bold border-2 border-white/20 hover:border-white hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-2">
-                Download CV
-              </button>
+            <a href="/Resume.pdf" download className="px-10 py-4 rounded-full border border-white/10 hover:bg-white/5 text-white font-bold flex items-center justify-center gap-2 transition-all">
+              <ArrowDownTrayIcon className="w-5 h-5" />
+              DOWNLOAD CV
             </a>
           </div>
         </motion.div>
 
-        {/* Image Content */}
+        {/* RIGHT IMAGE - CIRCLE FRAME */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="col-span-1 sm:col-span-4 flex justify-center items-center mt-12 lg:mt-0 relative"
+          className="col-span-1 lg:col-span-5 flex justify-center relative"
         >
-          <div className="relative"> {/* Wrapper for positioning the rings correctly */}
-            {/* Glowing Animated Ring */}
-            <motion.div
-              animate={{
-                rotate: 360,
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                rotate: { duration: 15, repeat: Infinity, ease: "linear" },
-                scale: { duration: 4, repeat: Infinity, ease: "easeInOut" }
-              }}
-              className="absolute -inset-4 rounded-full border-2 border-dashed border-cyan-500/40"
+          <div className="relative group">
+            {/* Rotating Decorative Rings */}
+            <motion.div 
+              animate={{ rotate: 360 }}
+              transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+              className="absolute -inset-6 border border-dashed border-blue-500/30 rounded-full"
+            />
+            <motion.div 
+              animate={{ rotate: -360 }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              className="absolute -inset-10 border border-blue-500/10 rounded-full"
             />
 
-            {/* Inner Static Glow */}
-            <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-2xl animate-pulse" />
-
-            {/* Profile Image Container */}
-            <div className="relative rounded-full p-1 bg-gradient-to-tr from-blue-500 via-cyan-400 to-indigo-500 shadow-[0_0_50px_rgba(6,182,212,0.3)]">
-              <div className="bg-[#121212] rounded-full p-1">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  className="overflow-hidden rounded-full w-[250px] h-[250px] lg:w-[320px] lg:h-[320px] relative"
-                >
-                  <Image
-                    src="/images/mypic.jpeg"
-                    alt="M Suhiab"
-                    className="object-cover"
-                    fill
-                    priority
-                  />
-                </motion.div>
+            {/* Main Circular Profile */}
+            <div className="w-[300px] h-[300px] lg:w-[420px] lg:h-[420px] rounded-full p-2 bg-gradient-to-tr from-blue-600 to-cyan-400 relative z-10">
+              <div className="w-full h-full rounded-full bg-[#0a0a0a] p-1 overflow-hidden relative">
+                <Image
+                  src="/images/mypic.jpeg"
+                  alt="M Suhaib"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  priority
+                />
               </div>
             </div>
+
+            {/* Floating Tech Stack Badge */}
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -bottom-4 -right-2 bg-slate-900 border border-white/10 p-4 rounded-2xl shadow-2xl z-20"
+            >
+              <div className="flex flex-col items-center">
+                <span className="text-blue-500 text-xs font-black uppercase tracking-tighter">Stack</span>
+                <span className="text-white font-bold text-sm leading-none mt-1">Next.js • AWS</span>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
