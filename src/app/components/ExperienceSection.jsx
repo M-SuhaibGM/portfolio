@@ -7,14 +7,13 @@ const EXPERIENCE_DATA = [
   {
     company: "NIT-SERVICES",
     location: "Lahore, Pakistan",
-    role: "Full Stack Development Intern",
+    role: "Full Stack Development ",
     duration: "2025",
     description: "Contributed to high-performance web solutions and collaborated with senior developers to implement scalable features.",
     achievements: [
       "Mastered production-grade Next.js workflows and server-side rendering strategies.",
       "Optimized database queries and schema designs using Prisma and PostgreSQL.",
       "Integrated secure authentication systems and role-based access control.",
-      "Gained hands-on experience in Agile methodologies and team-based version control."
     ],
     tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "TypeScript"]
   }

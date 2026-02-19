@@ -44,9 +44,9 @@ const ProjectCard = ({ project, index }) => {
 
             {/* View Project Button on Image Hover */}
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Link href={previewUrl || "#"} target="_blank" className="bg-white text-black px-6 py-3 rounded-full font-bold text-sm shadow-xl">
+              {previewUrl != "/" && <Link href={previewUrl} target="_blank" className="bg-white text-black px-6 py-3 rounded-full font-bold text-sm shadow-xl">
                 VIEW LIVE
-              </Link>
+              </Link>}
             </div>
           </motion.div>
         </div>
