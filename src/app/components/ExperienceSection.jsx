@@ -28,7 +28,7 @@ const ExperienceSection = () => {
           <motion.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="text-5xl md:text-7xl font-black text-white tracking-tighter"
+            className="text-4xl md:text-3xl font-black text-white tracking-tighter"
           >
             PROFESSIONAL <span className="text-blue-500 italic">JOURNEY</span>
           </motion.h2>

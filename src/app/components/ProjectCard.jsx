@@ -73,7 +73,7 @@ const ProjectCard = ({ project, index }) => {
 
             {/* Title & Main Description */}
             <div className="space-y-4">
-              <h3 className="text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tighter leading-none">
+              <h3 className="text-3xl lg:text-4xl font-black text-slate-900 dark:text-white tracking-tighter leading-none">
                 {title}
               </h3>
               <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
