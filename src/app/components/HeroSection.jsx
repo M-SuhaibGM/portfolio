@@ -33,13 +33,12 @@ const HeroSection = () => {
           </div>
 
           {/* MAIN NAME - HUGE */}
-          <h1 className="text-white text-6xl sm:text-7xl lg:text-9xl font-black tracking-tighter leading-none mb-4">
-            M. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">SUHAIB</span>
+          <h1 className="text-white text-4xl sm:text-4xl lg:text-5xl font-black tracking-tighter leading-none mb-4">
+            M.<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">SUHAIB</span>
           </h1>
 
           {/* SUB-ANIMATION - SMALLER */}
           <div className="h-12 flex items-center">
-            <span className="text-slate-400 text-lg lg:text-2xl font-medium mr-2">Specializing in</span>
             <TypeAnimation
               sequence={[
                 "Advance Web Development", 2000,
