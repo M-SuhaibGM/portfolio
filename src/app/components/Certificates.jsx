@@ -16,6 +16,29 @@ const certs = [
     provider: 'Web Development Bootcamp',
     thumbnail: '/udamy.jpg',
   },
+  {
+    id: 3,
+    title: 'SoloLearn Course Certificate',
+    provider: 'Web Development ',
+    thumbnail: '/sololearn.jpg',
+  },
+  {
+    id: 4,
+    title: 'ScholarHat Course Certificate',
+    provider: 'React JS',
+    thumbnail: '/scholarhat_page-0001.jpg',
+  },
+  {
+    id: 5,
+    title: 'ScholarHat Course Certificate',
+    provider: 'Node JS',
+    thumbnail: '/Nodejs.jpg',
+  },{
+    id: 6,
+    title: 'SimpliLearn Course Certificate',
+    provider: 'TypeScript',
+    thumbnail: '/typescript.jpg',
+  },
 ];
 
 const CertificatesSection = () => {
