@@ -2,7 +2,54 @@
 import ProjectCard from "./ProjectCard";
 const projectsData = [
   {
-    id: 4, // or your preferred sequence ID
+    id: 1,
+    title: "AI-Powered Voice Recruiter Agent",
+    description: "An advanced full-stack autonomous AI Voice Recruiter that automates HR screening with real-time multilingual voice interviews, anti-cheat monitoring, and AI-generated candidate feedback using Vapi AI, OpenAI, and Groq.",
+    role: "Full Stack Developer & System Architect",
+    image: "/images/projects/ai.png",
+    gitUrl: "https://github.com/M-SuhaibGM",
+    previewUrl: "https://ai-recruter-five.vercel.app",
+    tech: [
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma ORM",
+      "MySQL / TiDB",
+      "Vapi AI SDK",
+      "OpenAI GPT-4o-mini",
+      "Groq AI Cloud",
+      "Deepgram Nova-2",
+      "NextAuth.js",
+      "Stripe Payments",
+      "Nodemailer",
+      "Shadcn UI"
+    ],
+    features: [
+      "Autonomous real-time voice interviews with Vapi AI and Deepgram speech recognition",
+      "Multilingual support for English, Hindi, and Urdu with culturally appropriate AI responses",
+      "Real-time anti-cheat monitoring with tab switch detection and browser fingerprinting",
+      "AI-powered candidate grading using Llama 3.3 70B with structured JSON feedback",
+      "Interactive recruiter dashboard with candidate analytics and selection letter generation",
+      "Stripe-integrated credit-based billing system with transaction history",
+      "Pre-interview device check combining microphone and camera testing"
+    ],
+    achievements: [
+      "Built a real-time AI voice interview system with sub-second latency across 3 languages",
+      "Implemented robust anti-cheat detection with tab tracking and security logging",
+      "Created a multi-model AI feedback pipeline with 99.9% reliability using Groq",
+      "Developed complete SaaS billing with Stripe and idempotent payment verification",
+      "Engineered pre-interview device checks with waveform analysis and face detection"
+    ],
+    challenges: [
+      "Resolved TiDB JSON serialization issues with raw SQL queries and CAST operations",
+      "Managed complex WebSocket lifecycle for Vapi AI with proper error recovery",
+      "Prevented duplicate payments with database-level idempotency and atomic transactions",
+      "Built multi-model LLM fallback system for reliable feedback generation",
+      "Solved race conditions in payment verification with ref-based guard locks"
+    ]
+  },
+  {
+    id: 2, // or your preferred sequence ID
     title: "LMS Pro: Learning Management System",
     description: "A comprehensive educational platform allowing instructors to create, publish, and sell courses with integrated progress tracking and sales analytics.",
     role: "Full Stack Developer",
@@ -34,7 +81,7 @@ const projectsData = [
       "Architected a scalable backend structure capable of handling large video file metadata and student data"
     ]
   }, {
-    id: 6,
+    id: 3,
     title: "Messenger: Real-Time Chat Experience",
     description: "A high-performance communication platform enabling seamless instant messaging, group dynamics, and live presence tracking.",
     role: "Full Stack Developer",
@@ -132,7 +179,7 @@ const projectsData = [
     ]
   },
   {
-    id: 2,
+    id: 5,
     title: "Spotify 2.0: Personal Music Hub",
     description: "A high-fidelity music streaming clone featuring local library management and a sleek, interactive audio player interface.",
     role: "Full Stack Developer",
@@ -154,7 +201,7 @@ const projectsData = [
   },
 
   {
-    id: 3, // or appropriate number based on your projects array
+    id: 6, // or appropriate number based on your projects array
     title: "AI-Powered Presentation Generator",
     description: "An intelligent presentation generator that converts complex text prompts and meeting notes into fully structured slide decks in seconds using event-driven architecture and LLM orchestration.",
     role: "Full Stack Developer & System Architect",
@@ -193,7 +240,8 @@ const projectsData = [
       "Ensured zero-layout-shift experience by pre-seeding TanStack Query with server-fetched initial data and polling updates",
       "Addressed edge cases in prompt parsing and output validation to ensure consistent presentation structure across varied inputs"
     ]
-  }
+  },
+
 ];
 
 const ProjectsSection = () => {

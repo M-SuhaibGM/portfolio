@@ -7,6 +7,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import CertificatesPage from "./components/Certificates";
 import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
+import AchievementsSection from "./components/AchievementsSection";
 // import { TracingBeam } from "./components/ui/tracing-beam"; // Example Shadcn/Aceternity component
 
 export default function Home() {
@@ -40,6 +41,10 @@ export default function Home() {
         </section>
         <section id="projects" className="scroll-mt-20">
           <ProjectsSection />
+        </section>
+        
+        <section id="achievements" className="scroll-mt-20">
+          <AchievementsSection />
         </section>
 
         <section id="certificates" className="scroll-mt-20">

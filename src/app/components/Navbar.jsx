@@ -13,6 +13,7 @@ const navLinks = [
   { title: "Projects", path: "#projects", icon: <CodeBracketIcon className="w-4 h-4" /> },
   { title: "Experience", path: "#experience", icon: <CodeBracketIcon className="w-4 h-4" /> },
   { title: "Certificates", path: "#certificates", icon: <AcademicCapIcon className="w-4 h-4" /> },
+  { title: "Achievements", path: "#achievements", icon: <EnvelopeIcon className="w-4 h-4" /> },
   { title: "Contact", path: "#contact", },
 ];
 const Navbar = () => {
