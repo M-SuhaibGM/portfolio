@@ -113,7 +113,7 @@ const HeroSection = () => {
           {/* Location */}
           <div className="flex items-center gap-1.5 text-slate-500 text-sm mb-6">
             <MapPinIcon className="w-4 h-4 text-blue-500 flex-shrink-0" />
-            <span>Based in Lahore, Punjab — available remotely</span>
+            <span>Based in Islamabad, Punjab — available remotely</span>
           </div>
 
           {/* Buttons */}
@@ -215,7 +215,7 @@ const HeroSection = () => {
                 {/* Photo container - Perfectly centered */}
                 <div className="relative w-full aspect-square rounded-full overflow-hidden z-10">
                   <Image
-                    src="/images/mypic.png"
+                    src="/images/mypic.jpeg"
                     alt="M Suhaib"
                     fill
                     className="object-cover"

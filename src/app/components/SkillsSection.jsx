@@ -11,17 +11,18 @@ const SKILLS_DATA = [
             { name: "Tailwind CSS", level: 90 },
             { name: "ShadCN UI", level: 85 },
             { name: "Framer Motion", level: 85 },
-            { name: "Chakra UI", level: 80 },
+            { name: "React Query", level: 80 },
         ],
     },
     {
         category: "Backend & API Development",
         skills: [
             { name: "Node.js / Express", level: 85 },
+            { name: "Nest.js", level: 85 },
             { name: "Next.js API Routes", level: 90 },
             { name: "Prisma ORM", level: 82 },
             { name: "RESTful APIs", level: 88 },
-            { name: "WebSockets (Pusher)", level: 85 },
+
         ],
     },
     {
@@ -37,11 +38,11 @@ const SKILLS_DATA = [
     {
         category: "Cloud & DevOps",
         skills: [
-            { name: "Amazon S3", level: 82 },
-            { name: "AWS Lambda", level: 80 },
-            { name: "AWS Amplify", level: 78 },
+            { name: "Amazon Web Services", level: 82 },
+            { name: "CI/CD", level: 80 },
+            { name: "Docker", level: 78 },
             { name: "Vercel", level: 90 },
-            { name: "Firebase", level: 75 },
+
         ],
     },
     {
@@ -51,7 +52,7 @@ const SKILLS_DATA = [
             { name: "Vapi AI", level: 85 },
             { name: "Inngest", level: 82 },
             { name: "UploadThing", level: 90 },
-            { name: "Realtime Features", level: 85 },
+            { name: "Socket.io", level: 85 },
         ],
     },
     {
@@ -68,15 +69,15 @@ const SKILLS_DATA = [
 
 const ADDITIONAL_SKILLS = [
     // Frontend & UI
-    "Responsive Design",
-    "Lucide Icons",
-    "Fabric.js",
+    // "Responsive Design",
+    // "Lucide Icons",
+    // "Fabric.js",
 
-    // Backend
-    "NextAuth.js",
-    "JWT Authentication",
-    "Webhook Integration",
-,
+    // // Backend
+    // "NextAuth.js",
+    // "JWT Authentication",
+    // "Webhook Integration",
+    // "Stripe Integration",
 ];
 
 const SkillsSection = () => {

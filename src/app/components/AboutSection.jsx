@@ -98,7 +98,7 @@ const AboutSection = () => {
             <div className="p-5 rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-sm hover:border-blue-500/50 transition-all group">
               <SparklesIcon className="w-6 h-6 text-yellow-500 mb-3 group-hover:rotate-12 transition-transform" />
               <p className="text-[10px] font-black uppercase text-slate-400 mb-1">Currently Learning</p>
-              <p className="text-sm font-bold leading-tight dark:text-white"> CI/CD</p>
+              <p className="text-sm font-bold leading-tight dark:text-white">React Native</p>
             </div>
             <div className="p-5 rounded-3xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-sm hover:border-blue-500/50 transition-all group">
               <BriefcaseIcon className="w-6 h-6 text-blue-500 mb-3 group-hover:scale-110 transition-transform" />
@@ -115,8 +115,10 @@ const AboutSection = () => {
               About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Me</span>
             </h2>
             <p className="text-lg lg:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-              I am a specialized Full-Stack Developer with a deep focus on performance and minimalist design.
-              Currently pursuing my <span className="text-blue-600 dark:text-blue-400 font-bold">Bachelor’s in Computer Science</span> at the University of Okara.
+              Full-Stack Developer with hands-on experience building and deploying 6
+              production applications. Skilled in Next.js, TypeScript, Docker, and CI/CD
+              pipelines.
+              <span className="text-blue-600 dark:text-blue-400 font-bold">Bachelor’s in Computer Science</span> at the University of Okara.
             </p>
             <p className="mt-4 text-base text-slate-500 dark:text-slate-400 leading-relaxed">
               I thrive in the intersection of logic and creativity, building tools that are as powerful under the hood as they are beautiful to the user.

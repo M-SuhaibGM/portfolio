@@ -25,7 +25,7 @@ const Footer = () => {
             </Link>
             <p className="text-slate-600 dark:text-slate-400 max-w-xs leading-relaxed">
               Crafting high-performance web experiences with modern tech stacks.
-              Based in lahore, Pakistan.
+              Based in Islamabad, Pakistan.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
               {[
                 { name: "GitHub", href: "https://github.com/M-SuhaibGM" },
                 { name: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-suhaib-811452326/" },
-              
+
               ].map((link) => (
                 <a
                   key={link.name}
@@ -64,7 +64,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-3 text-slate-600 dark:text-slate-400">
                 <PhoneIcon className="w-5 h-5 text-blue-500" />
-                <span>0319-4776162</span>
+                <span>0325-3903723</span>
               </div>
               <div className="flex items-center gap-2 mt-4">
                 <img
