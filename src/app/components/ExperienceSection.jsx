@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BriefcaseIcon, CalendarIcon, MapPinIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
-import { EXPERIENCE_DATA } from "@/app/Data";
+import { EXPERIENCE_DATA } from "./Data";
 
 const ExperienceSection = () => {
   return (

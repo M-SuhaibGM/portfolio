@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 import ProjectCard from "./ProjectCard";
 // Move your big projectsData array into ./projectsData.js and export it:
 //   export const projectsData = [ ... ];
-import { projectsData } from "@/app/Data";
+import { projectsData } from "./Data";
 
 const ProjectsSection = () => {
   // Optional: add `category: "AI" | "Real-time" | "SaaS"` and `featured: true`
